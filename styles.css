@@ -1,0 +1,8 @@
+.mybutton {
+   -fx-border-color:blue;
+   -fx-border-width:2px;
+}
+
+.label {
+   -fx-border-color:red;
+}
