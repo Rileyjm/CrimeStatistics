@@ -95,7 +95,7 @@
             </Text>
             <DatePicker fx:id="date" layoutX="377.0" layoutY="76.0" prefHeight="36.0" prefWidth="198.0" promptText="Enter Date" />
             <TextArea fx:id="Results" editable="false" layoutX="8.0" layoutY="203.0" prefHeight="158.0" prefWidth="621.0" />
-            <TextField layoutX="96.0" layoutY="76.0" prefHeight="36.0" prefWidth="163.0" promptText="Enter Crime" />
+            <TextField fx:id="crime" layoutX="96.0" layoutY="76.0" prefHeight="36.0" prefWidth="163.0" promptText="Enter Crime" />
             <Button fx:id="Enter" layoutX="293.0" layoutY="146.0" mnemonicParsing="false" onAction="#onSearch" text="Search" />
       </children>
     </AnchorPane>
