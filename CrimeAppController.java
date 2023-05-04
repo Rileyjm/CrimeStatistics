@@ -2,6 +2,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import java.time.LocalDate;
 import javafx.event.ActionEvent;
 import com.google.gson.Gson;
@@ -23,14 +24,21 @@ public class CrimeAppController{
    @FXML
     private TextArea Results;
     
+    @FXML
+    private TextField crime;
+    
     
    @FXML
    private void onSearch(ActionEvent event)throws Exception{
+      
+      String crime = this.crime.getText().toString();
+      System.out.println(crime);
+      
       LocalDate date = this.date.getValue();
       System.out.println(date);
       
       String apiURL =  "https://phl.carto.com/api/v2/sql?q=" + 
-                        URLEncoder.encode("SELECT * FROM incidents_part1_part2 WHERE dispatch_date = '" +date.toString()+"'");
+                        URLEncoder.encode("SELECT * FROM incidents_part1_part2 WHERE  text_general_code = " + "'" + crime + "'" + " AND dispatch_date = "+ "'" + date + "'");
       System.out.println(apiURL);
    
       String jsonString = "";

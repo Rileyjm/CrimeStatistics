@@ -34,6 +34,6 @@ public class PoliceActivity {
 
 
     public String toString() {
-        return "Police Activity{" +"dispatch_date_time ='" + dispatch_date_time + '\'' + ", dc_key ='" + dc_key + '\'' + ", location_block ='" + location_block + '\'' + '}';
+        return "Police Activity: " + "dispatch date time = " + dispatch_date_time + ", dc_key = " + dc_key + ", location_block = " + location_block;
     }
 }
