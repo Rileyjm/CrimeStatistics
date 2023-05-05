@@ -86,7 +86,7 @@
         </Menu>
       </menus>
     </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane fx:id="Robbery" maxHeight="-1.0" maxWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
             <Text layoutX="184.0" layoutY="28.739999771118164" strokeType="OUTSIDE" strokeWidth="0.0" text="Philadelphia Crime Statistics Lookup" textAlignment="CENTER" wrappingWidth="291.521484375" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="9.0">
                <font>
@@ -97,6 +97,9 @@
             <TextArea fx:id="Results" editable="false" layoutX="8.0" layoutY="203.0" prefHeight="158.0" prefWidth="621.0" />
             <TextField fx:id="crime" layoutX="96.0" layoutY="76.0" prefHeight="36.0" prefWidth="163.0" promptText="Enter Crime" />
             <Button fx:id="Enter" layoutX="293.0" layoutY="146.0" mnemonicParsing="false" onAction="#onSearch" text="Search" />
+            <Text fx:id="example" fill="#807676" layoutX="104.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Example: Theft from Vehicle" />
+            <Text fx:id="firearm" fill="#7c7a7a" layoutX="152.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Robbery No Firearm" />
+            <Text fx:id="Drunk" fill="#757373" layoutX="153.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Public Drunkenness" />
       </children>
     </AnchorPane>
   </children>

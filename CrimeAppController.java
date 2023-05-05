@@ -6,11 +6,12 @@ import javafx.scene.control.TextField;
 import java.time.LocalDate;
 import javafx.event.ActionEvent;
 import com.google.gson.Gson;
-   import java.io.BufferedReader;
+ import java.io.BufferedReader;
    import java.io.InputStreamReader;
    import java.net.HttpURLConnection;
    import java.net.URL;
    import java.net.URLEncoder;
+import javafx.scene.text.Text;
 
 
 public class CrimeAppController{
@@ -26,6 +27,17 @@ public class CrimeAppController{
     
     @FXML
     private TextField crime;
+    
+     @FXML
+    private Text example;
+    
+    @FXML
+    private Text Drunk;
+    
+    @FXML
+    private Text firearm;
+
+ 
     
     
    @FXML
